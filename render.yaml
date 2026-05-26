@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-image-bot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: API_KEY
+        sync: false
